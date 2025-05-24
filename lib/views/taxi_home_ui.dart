@@ -154,7 +154,10 @@ class _TaxiHomeUiState extends State<TaxiHomeUi> {
                   height: 15.0,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    distanceController.clear();
+                    carstuckController.clear();
+                  },
                   child: Text('ยกเลิก',
                       style: TextStyle(
                         color: Colors.white,
